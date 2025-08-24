@@ -134,7 +134,7 @@ const person1: User = {
 };
 // person1.isSubscribed = true;  <== Error
 
-//! Intersection Type
+//! Intersection Type (Like AND)
 //? Ye 2 (ya zyada) types ko combine karke ek naya type banata hai.
 
 type Director = {
@@ -153,8 +153,29 @@ const rajamauly: DirectorPortfolio = {
   total: 14,
   anyBlockboster: true,
 };
-console.log(
-  `${rajamauly.name} Age is ${rajamauly.age} and Total Movies ${
-    rajamauly.total
-  } ${rajamauly.anyBlockboster ? "With" : "No Have Any"} Blockbaster Movie`
-);
+// console.log(
+//   `${rajamauly.name} Age is ${rajamauly.age} and Total Movies ${
+//     rajamauly.total
+//   } ${rajamauly.anyBlockboster ? "With" : "No Have Any"} Blockbaster Movie`
+// );
+
+//! Union Type (Like OR)
+
+let password: string | number = "@ldirke"; //=> true -> Error
+
+const items: (number | string)[] = [3, 4, "lauki"];
+
+//! Litral Type (fixed values hi assign)
+
+type Person = {
+  name: string;
+  age: number;
+  sex: "Male" | "Female";
+};
+
+const pushpendra: Person = {
+  name: "Pushpendra Nath",
+  age: 20,
+  sex: "Male",
+};
+console.log(pushpendra);
