@@ -178,4 +178,11 @@ const pushpendra: Person = {
   age: 20,
   sex: "Male",
 };
-console.log(pushpendra);
+
+// console.log(pushpendra);
+
+//! Tuple ( Fixed Nomber Of Element )
+
+type myTuple = [string, number];
+const lokendra: myTuple = ["Lokendra", 20]; //=> error -> [23,"disable"]
+console.log(lokendra);
