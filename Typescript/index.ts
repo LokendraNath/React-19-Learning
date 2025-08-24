@@ -132,4 +132,29 @@ const person1: User = {
   age: 42,
   isSubscribed: false,
 };
-person1.isSubscribed = true;
+// person1.isSubscribed = true;  <== Error
+
+//! Intersection Type
+//? Ye 2 (ya zyada) types ko combine karke ek naya type banata hai.
+
+type Director = {
+  name: string;
+  age: number;
+};
+type Movies = {
+  total: number;
+  anyBlockboster: boolean;
+};
+type DirectorPortfolio = Director & Movies;
+
+const rajamauly: DirectorPortfolio = {
+  name: "S. S. Rajamauli",
+  age: 56,
+  total: 14,
+  anyBlockboster: true,
+};
+console.log(
+  `${rajamauly.name} Age is ${rajamauly.age} and Total Movies ${
+    rajamauly.total
+  } ${rajamauly.anyBlockboster ? "With" : "No Have Any"} Blockbaster Movie`
+);
