@@ -105,7 +105,7 @@ type User = {
   name: string;
   age: number;
   readonly isSubscribed: boolean;
-  country: string;
+  readonly country?: string;
   haveIphone?: boolean;
 };
 
@@ -123,4 +123,13 @@ const res2 = messageUser({
   isSubscribed: false,
   country: "India",
 });
-console.log(res2);
+// console.log(res2);
+
+//! Readonly
+
+const person1: User = {
+  name: "Lokendra Verm",
+  age: 42,
+  isSubscribed: false,
+};
+person1.isSubscribed = true;
