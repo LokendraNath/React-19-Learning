@@ -62,4 +62,22 @@ function example(name: string): void {
   console.log(name);
   // Error => return 2
 }
-example("Lokendra Nath");
+// example("Lokendra Nath");
+
+//! Array Type ([] => Notation) (Single Dimensial)
+
+let arr1: number[] = [2, 2, 3, 23];
+const arr2: string[] = ["lokendra", "verma"];
+// console.log(arr1);
+
+arr1.push(65); // 'lokendra'  <- Error
+// console.log(arr1);
+
+//! Nested Array (Multi Dimensial)
+
+const multiDim: number[][] = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+console.log(multiDim);
