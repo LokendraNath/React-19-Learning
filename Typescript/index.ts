@@ -80,4 +80,21 @@ const multiDim: number[][] = [
   [4, 5, 6],
   [7, 8, 9],
 ];
-console.log(multiDim);
+// console.log(multiDim);
+
+//! Object
+
+const employee: {
+  name: string;
+  haveWife: boolean;
+  age: number;
+} = {
+  name: "Vijay Madhvan",
+  haveWife: false,
+  age: 32,
+};
+console.log(
+  `${employee.name} ${
+    employee.haveWife ? "Have" : "Not Have"
+  } Wife at the age of ${employee.age}`
+);
