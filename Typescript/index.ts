@@ -93,8 +93,31 @@ const employee: {
   haveWife: false,
   age: 32,
 };
-console.log(
-  `${employee.name} ${
-    employee.haveWife ? "Have" : "Not Have"
-  } Wife at the age of ${employee.age}`
-);
+// console.log(
+//   `${employee.name} ${
+//     employee.haveWife ? "Have" : "Not Have"
+//   } Wife at the age of ${employee.age}`
+// );
+
+//! Type Allias
+
+type User = {
+  name: string;
+  age: number;
+  isSubscribed: boolean;
+  country: string;
+};
+
+const messageUser = (user: User) => {
+  return `${user.name} Age is ${user.age} LogIn from ${
+    user.country
+  } and He is ${user.isSubscribed ? "Subscribed" : "Not Subscribe"}`;
+};
+
+const res2 = messageUser({
+  name: "Pushpendra",
+  age: 22,
+  isSubscribed: false,
+  country: "India",
+});
+console.log(res2);
