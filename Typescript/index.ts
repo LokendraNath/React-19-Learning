@@ -104,14 +104,17 @@ const employee: {
 type User = {
   name: string;
   age: number;
-  isSubscribed: boolean;
+  readonly isSubscribed: boolean;
   country: string;
+  haveIphone?: boolean;
 };
 
 const messageUser = (user: User) => {
   return `${user.name} Age is ${user.age} LogIn from ${
     user.country
-  } and He is ${user.isSubscribed ? "Subscribed" : "Not Subscribe"}`;
+  } and He is ${user.isSubscribed ? "Subscribed" : "Not Subscribe"} with ${
+    user.haveIphone ? "iPhone" : "No Have iPhone"
+  }`;
 };
 
 const res2 = messageUser({
