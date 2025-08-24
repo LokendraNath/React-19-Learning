@@ -44,7 +44,7 @@ const res = defualtName();
 
 // console.log(res);
 
-//! Return Annotation (Regular)
+//! Return Annotation (Regular) =============================================
 
 // Regular Fuck
 function double1(num: number): number {
@@ -55,3 +55,11 @@ function double1(num: number): number {
 const double2 = (num: number): number => num * 2;
 
 // console.log(double1(2));
+
+//! Void In Typescript (kuch return nahi karta)
+
+function example(name: string): void {
+  console.log(name);
+  // Error => return 2
+}
+example("Lokendra Nath");

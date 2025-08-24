@@ -40,3 +40,20 @@ function add(a: number, b: number): number {
   return a + b;
 }
 ```
+
+# TypeScript Note: `void`
+
+## 🔹 What is `void`?
+
+- `void` ek **special return type** hai.
+- Jab function **kuch return nahi karta**, tab `void` use hota hai.
+
+---
+
+## 🔹 Example
+
+```ts
+function logMessage(message: string): void {
+  console.log(message); // ✅ only logs, no return
+}
+```
