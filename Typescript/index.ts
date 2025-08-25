@@ -44,7 +44,7 @@ const res = defualtName();
 
 // console.log(res);
 
-//! Return Annotation (Regular) =============================================
+//! Return Annotation (Regular)
 
 // Regular Fuck
 function double1(num: number): number {
@@ -185,4 +185,29 @@ const pushpendra: Person = {
 
 type myTuple = [string, number];
 const lokendra: myTuple = ["Lokendra", 20]; //=> error -> [23,"disable"]
-console.log(lokendra);
+// console.log(lokendra);
+
+//Todo 25 august
+
+//! Enums -> enumeration ( set of named constants )
+
+enum Wether {
+  Clear = "Clear",
+  Rainy = "Rainy",
+  Cloudy = "Cloudy",
+}
+const currentWhether = Wether.Cloudy;
+// console.log(currentWhether);
+
+//! Interface (contract (blueprint))
+interface Series {
+  readonly name: string;
+  rating: number;
+  genra?: string;
+}
+const blackPanthar: Series = {
+  name: "Black Panther",
+  rating: 4.5,
+  genra: "Action",
+};
+console.log(blackPanthar);
