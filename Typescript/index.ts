@@ -187,8 +187,6 @@ type myTuple = [string, number];
 const lokendra: myTuple = ["Lokendra", 20]; //=> error -> [23,"disable"]
 // console.log(lokendra);
 
-//Todo 25 august
-
 //! Enums -> enumeration ( set of named constants )
 
 enum Wether {
@@ -221,6 +219,13 @@ function uniqueNumber<T>(item: T, defaultvalue: T): [T, T] {
 // console.log(uniqueNumber<number>(34, 53));
 // console.log(uniqueNumber<string>("Lokendra", "Verma"));
 
+function identity<T>(value: T): T {
+  return value;
+}
+
+let num = identity<number>(10); // T = number
+let str = identity<string>("Lokendra"); // T = string
+
 //* Objetc
 interface Computer {
   name: string;
@@ -249,4 +254,13 @@ const evenNumber = filterNumber<number>(arrayNum, (num) => num % 2 === 0);
 //String
 const string = ["Lokendra", "Ronaldo", "Messi", "Kohli", "Kilion"];
 const shortName = filterNumber<string>(string, (word) => word.length < 7);
-console.log(shortName);
+// console.log(shortName);
+
+//* Generic function with multiple Types
+
+function reversePair<T, U>(value1: T, value2: U): [U, T] {
+  return [value2, value1];
+}
+
+const res1 = reversePair("Lokendra", 25);
+console.log(res1);
