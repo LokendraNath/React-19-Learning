@@ -215,7 +215,7 @@ function uniqueNumber<T>(item: T, defaultvalue: T): [T, T] {
   return [item, defaultvalue];
 }
 
-//* Basics
+//* Basics ----------------
 // console.log(uniqueNumber<number>(34, 53));
 // console.log(uniqueNumber<string>("Lokendra", "Verma"));
 
@@ -226,7 +226,7 @@ function identity<T>(value: T): T {
 let num = identity<number>(10); // T = number
 let str = identity<string>("Lokendra"); // T = string
 
-//* Objetc
+//* Objetc ----------------
 interface Computer {
   name: string;
   modle: number;
@@ -241,7 +241,7 @@ const computer1 = uniqueNumber<Computer>(
 );
 // console.log(computer1);
 
-//* RLE
+//* RLE ----------------
 function filterNumber<T>(array: T[], condition: (item: T) => boolean): T[] {
   return array.filter((item) => condition(item));
 }
@@ -256,11 +256,85 @@ const string = ["Lokendra", "Ronaldo", "Messi", "Kohli", "Kilion"];
 const shortName = filterNumber<string>(string, (word) => word.length < 7);
 // console.log(shortName);
 
-//* Generic function with multiple Types
+//* Generic function with multiple Types ----------------
 
 function reversePair<T, U>(value1: T, value2: U): [U, T] {
   return [value2, value1];
 }
 
 const res1 = reversePair("Lokendra", 25);
-console.log(res1);
+// console.log(res1);
+
+//! Type Narrowing <---------------------------------------------
+
+//? Jab ek variable ke multiple possible types hote hain (union types), to runtime checks ke through uska exact type restrict (narrow) karna.
+
+//? Several Mechnism => 1. Type Guard , 2. The instanceof operator , 3. Intersection Types
+
+//* 1.TYPE GUARD => TypeScript ko batati hai ki ek variable ka exact type kya hai. (Common Oprtr => typeof)
+
+// Define a Union Type
+type MyType = string | number;
+
+//example function the type guard
+function exampleFucntion(value: MyType): void {
+  // Type Guard using typeof
+  if (typeof value === "string") {
+    // Within this block , Typescript knows that 'value' is a string
+    console.log(value.toUpperCase());
+  } else {
+    // Within this block , TypeScript knows that 'value' is a number
+    console.log(value.toFixed(2));
+  }
+}
+
+//Example Usage
+// exampleFucntion("Hello"); // HELLO
+// exampleFucntion(35); // 35.00
+
+//* 2. INSTANCEOF OPERATOR => Kya ek object kisi particular class ka instance hai ya uske prototype chain me hai?
+class Dog {
+  sound(): void {
+    console.log("Booow");
+  }
+}
+class Cat {
+  sound(): void {
+    console.log("Meow");
+  }
+}
+
+function animalSound(animal: Dog | Cat): void {
+  if (animal instanceof Dog) {
+    animal.sound();
+  }
+}
+
+const myDog = new Dog();
+const myCat = new Cat();
+
+// animalSound(myDog); //booo
+
+//* 3.INTERSECTION TYPE => Multiple types ko combine karke ek naya type banana.
+
+type Employee = {
+  id: number;
+  name: string;
+};
+type Manager = {
+  department: string;
+  role: string;
+};
+
+type ManagerWithEmployeeInfo = Employee & Manager;
+
+const manager: ManagerWithEmployeeInfo = {
+  id: 12,
+  name: "Lokendra Nath",
+  department: "Software",
+  role: "Senior Developer",
+};
+console.log(manager.id);
+console.log(manager.name);
+console.log(manager.department);
+console.log(manager.role);
