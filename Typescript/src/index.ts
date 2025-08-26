@@ -334,7 +334,11 @@ const manager: ManagerWithEmployeeInfo = {
   department: "Software",
   role: "Senior Developer",
 };
-console.log(manager.id);
-console.log(manager.name);
-console.log(manager.department);
-console.log(manager.role);
+// console.log(manager.id);
+// console.log(manager.name);
+// console.log(manager.department);
+// console.log(manager.role);
+
+const arrow3 = (num: number, num2: number): number => {
+  return num + num2;
+};
