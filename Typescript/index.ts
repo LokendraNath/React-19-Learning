@@ -210,4 +210,43 @@ const blackPanthar: Series = {
   rating: 4.5,
   genra: "Action",
 };
-console.log(blackPanthar);
+// console.log(blackPanthar);
+
+//! Generics ( type ko parameter ki tarah ) T = Type
+function uniqueNumber<T>(item: T, defaultvalue: T): [T, T] {
+  return [item, defaultvalue];
+}
+
+//* Basics
+// console.log(uniqueNumber<number>(34, 53));
+// console.log(uniqueNumber<string>("Lokendra", "Verma"));
+
+//* Objetc
+interface Computer {
+  name: string;
+  modle: number;
+}
+
+const computer1 = uniqueNumber<Computer>(
+  {
+    name: "Hp",
+    modle: 2023,
+  },
+  { name: "Apple", modle: 2022 }
+);
+// console.log(computer1);
+
+//* RLE
+function filterNumber<T>(array: T[], condition: (item: T) => boolean): T[] {
+  return array.filter((item) => condition(item));
+}
+
+//OBJ
+const arrayNum = [24, 54, 5, 4, 5];
+const evenNumber = filterNumber<number>(arrayNum, (num) => num % 2 === 0);
+// console.log(evenNumber);
+
+//String
+const string = ["Lokendra", "Ronaldo", "Messi", "Kohli", "Kilion"];
+const shortName = filterNumber<string>(string, (word) => word.length < 7);
+console.log(shortName);
