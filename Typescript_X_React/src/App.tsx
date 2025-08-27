@@ -4,7 +4,9 @@
 // import STE from "./STE";
 // import STExTodo from "./components/STExTodo";
 
-import STExTodo from "./components/STExTodo";
+import { Form } from "./components/RFExForm";
+
+// import STExTodo from "./components/STExTodo";
 
 export const App = () => {
   return (
@@ -29,7 +31,10 @@ export const App = () => {
 
       {/* useState Types Exercise */}
       {/* <STE /> */}
-      <STExTodo />
+      {/* <STExTodo /> */}
+
+      {/* useRef, Form , Event */}
+      <Form />
     </div>
   );
 };
