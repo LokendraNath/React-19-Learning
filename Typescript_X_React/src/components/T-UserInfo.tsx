@@ -1,4 +1,4 @@
-import type { Info } from "../Type-types";
+import type { Info } from "../T-types";
 
 export function UserInfo({ user }: { user: Info }) {
   return (
