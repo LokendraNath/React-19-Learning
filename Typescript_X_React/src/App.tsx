@@ -1,5 +1,6 @@
 // import TypeApp from "./Type-App";
-import { RTxApp } from "./RTxApp";
+// import { RTxApp } from "./RTxApp";
+import Counter from "./components/STxCounter";
 
 export const App = () => {
   return (
@@ -17,7 +18,10 @@ export const App = () => {
       {/* <TypeApp /> */}
 
       {/* Reusable Types */}
-      <RTxApp />
+      {/* <RTxApp /> */}
+
+      {/* useState Types */}
+      <Counter />
     </div>
   );
 };
