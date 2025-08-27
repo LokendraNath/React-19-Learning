@@ -1,7 +1,10 @@
 // import TypeApp from "./Type-App";
 // import { RTxApp } from "./RTxApp";
 // import Counter from "./components/STxCounter";
-import STE from "./STE";
+// import STE from "./STE";
+// import STExTodo from "./components/STExTodo";
+
+import STExTodo from "./components/STExTodo";
 
 export const App = () => {
   return (
@@ -25,7 +28,8 @@ export const App = () => {
       {/* <Counter /> */}
 
       {/* useState Types Exercise */}
-      <STE />
+      {/* <STE /> */}
+      <STExTodo />
     </div>
   );
 };
