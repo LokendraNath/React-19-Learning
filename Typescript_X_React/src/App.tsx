@@ -1,16 +1,17 @@
-// import User from "./components/User";
-
-import { Button } from "./components/Button";
+import TypeApp from "./Type-App";
 
 export const App = () => {
   return (
     <div>
-      {/* <User name="Lokendra Nath" age={20} isVergin={true} /> */}
+      {/* Props Define
+      <User name="Lokendra Nath" age={20} isVergin={true} /> */}
+      {/*  Basic Button Declaration
       <Button
         label="Click"
         onClick={() => console.log("Click")}
         disable={false}
-      />
+      /> */}
+      <TypeApp />
     </div>
   );
 };
