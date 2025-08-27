@@ -1,4 +1,5 @@
-import TypeApp from "./Type-App";
+// import TypeApp from "./Type-App";
+import { RTxApp } from "./RTxApp";
 
 export const App = () => {
   return (
@@ -11,7 +12,12 @@ export const App = () => {
         onClick={() => console.log("Click")}
         disable={false}
       /> */}
-      <TypeApp />
+
+      {/* Type-Safe RC */}
+      {/* <TypeApp /> */}
+
+      {/* Reusable Types */}
+      <RTxApp />
     </div>
   );
 };
