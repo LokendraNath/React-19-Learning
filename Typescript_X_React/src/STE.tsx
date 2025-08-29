@@ -1,5 +1,5 @@
 import { useState } from "react";
-import STExUserProfile from "./components/STExUserProfile";
+import STExUserProfile from "./components/useState (ST+E)/STExUserProfile";
 
 const STE = () => {
   const [counter, setCounter] = useState<number>(0);

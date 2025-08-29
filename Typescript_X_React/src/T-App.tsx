@@ -1,6 +1,6 @@
 import type { Info, AdminInfoList } from "./T-types";
-import { AdminInfo } from "./components/T-AdminInfo";
-import { UserInfo } from "./components/T-UserInfo";
+import { AdminInfo } from "./components/Basic Types/T-AdminInfo";
+import { UserInfo } from "./components/Basic Types/T-UserInfo";
 
 const TypeApp = () => {
   const user: Info = {

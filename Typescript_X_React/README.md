@@ -2,6 +2,7 @@
 
 - RT -> Reusable Types
 - ST -> useState Types
-  - STE -> ST Exercise
+  - STE -> Exercise
 - RFE -> Types for useRef , Form , Events
-  - RFE2 -> RFE Exercise
+  - RFEE -> RFE Exercise
+- CT -> useContext Api Types

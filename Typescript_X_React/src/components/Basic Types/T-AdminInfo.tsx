@@ -1,4 +1,4 @@
-import type { AdminInfoList } from "../T-types";
+import type { AdminInfoList } from "../../T-types";
 
 export function AdminInfo({ admin }: { admin: AdminInfoList }) {
   if (!admin) return <p>No Admin Data</p>;

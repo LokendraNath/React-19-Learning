@@ -1,5 +1,5 @@
-import { RTxAdminInfo } from "./components/RTxAdminInfo";
-import { RTxUserInfo } from "./components/RTxUserInfo";
+import { RTxAdminInfo } from "./components/Reusable Types (RT)/RTxAdminInfo";
+import { RTxUserInfo } from "./components/Reusable Types (RT)/RTxUserInfo";
 
 export const RTxApp = () => {
   return (
