@@ -4,9 +4,12 @@
 // import STE from "./STE";
 // import STExTodo from "./components/STExTodo";
 
-import { ContactForm } from "./components/useRef (RFE + E)/RFEExContactForm";
-import EventHandeling from "./components/useRef (RFE + E)/RFEExEventHandling";
-import { FocusInput } from "./components/useRef (RFE + E)/RFEExFocusInput";
+import CTxApp from "./CTxApp";
+
+// import CTxApp, { Counter } from "./CTxApp";
+// import { ContactForm } from "./components/useRef (RFE + E)/RFEExContactForm";
+// import EventHandeling from "./components/useRef (RFE + E)/RFEExEventHandling";
+// import { FocusInput } from "./components/useRef (RFE + E)/RFEExFocusInput";
 
 // import { Form } from "./components/RFExForm";
 
@@ -30,14 +33,16 @@ export const App = () => {
       {/* ========== useState Types ========== */}
       {/* <Counter /> */}
       {/* ========== useState Types Exercise ========== */}
-      {/* <STE /> */}
-      {/* <STExTodo /> */}
+      {/* <STE /> 
+      <STExTodo /> */}
       {/* ========== useRef, Form , Event ==========*/}
       {/* <Form /> Basic Form */}
       {/* ========== useRef, Form , Event Exercise ==========*/}
-      <FocusInput />
+      {/* <FocusInput />
       <ContactForm />
-      <EventHandeling />
+      <EventHandeling /> */}
+      {/* ========== useContext Api ==========*/}
+      <CTxApp />
     </div>
   );
 };
