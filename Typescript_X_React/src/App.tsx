@@ -4,7 +4,9 @@
 // import STE from "./STE";
 // import STExTodo from "./components/STExTodo";
 
-import CTxApp from "./CTxApp";
+import { RDTxCounter } from "./components/useReducer (RDT)/RDTxCounter";
+
+// import CTxApp from "./CTxApp";
 
 // import CTxApp, { Counter } from "./CTxApp";
 // import { ContactForm } from "./components/useRef (RFE + E)/RFEExContactForm";
@@ -42,7 +44,9 @@ export const App = () => {
       <ContactForm />
       <EventHandeling /> */}
       {/* ========== useContext Api ==========*/}
-      <CTxApp />
+      {/* <CTxApp /> */}
+      {/* ========== useReducer ==========*/}
+      <RDTxCounter />
     </div>
   );
 };
