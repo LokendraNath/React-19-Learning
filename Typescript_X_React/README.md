@@ -2,5 +2,6 @@
 
 - RT -> Reusable Types
 - ST -> useState Types
-- STE -> useState Types Exercise
+  - STE -> ST Exercise
 - RFE -> Types for useRef , Form , Events
+  - RFE2 -> RFE Exercise
