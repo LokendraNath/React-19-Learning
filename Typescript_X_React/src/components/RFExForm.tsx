@@ -17,7 +17,7 @@ export const Form = () => {
   const email = useRef<HTMLInputElement>(null);
   const password = useRef<HTMLInputElement>(null);
 
-  const handleSubmitClick = (event: FormEvent<HTMLInputElement>) => {
+  const handleSubmitClick = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const nameValue = name.current!.value;

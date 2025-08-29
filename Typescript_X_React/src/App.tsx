@@ -19,22 +19,17 @@ export const App = () => {
         onClick={() => console.log("Click")}
         disable={false}
       /> */}
-
-      {/* Type-Safe RC */}
+      {/* ========== Type-Safe RC ============*/}
       {/* <TypeApp /> */}
-
-      {/* Reusable Types */}
+      {/* ========== Reusable Types ========== */}
       {/* <RTxApp /> */}
-
-      {/* useState Types */}
+      {/* ========== useState Types ========== */}
       {/* <Counter /> */}
-
-      {/* useState Types Exercise */}
+      {/* ========== useState Types Exercise ========== */}
       {/* <STE /> */}
       {/* <STExTodo /> */}
-
-      {/* useRef, Form , Event */}
-      <Form />
+      {/* ========== useRef, Form , Event ==========*/}
+      <Form /> {/* Basic Form*/}
     </div>
   );
 };
