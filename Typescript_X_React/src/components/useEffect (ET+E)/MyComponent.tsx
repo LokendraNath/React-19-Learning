@@ -20,7 +20,7 @@ export const MyComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://dummyjson.com/product/1");
+        const response = await fetch("https://dummyjson.com/product/5");
         const result = (await response.json()) as Product;
         setData(result);
       } catch (error) {
@@ -34,7 +34,7 @@ export const MyComponent = () => {
   return (
     <div>
       {data ? (
-        <>
+        <div key={data.id}>
           <p>Id: {data.id}</p>
           <p>Title: {data.title}</p>
           <p>Description: {data.description}</p>
@@ -45,7 +45,7 @@ export const MyComponent = () => {
           <p>Brand: {data.brand}</p>
           <p>Category: {data.category}</p>
           <img src={data.thumbnail} alt="" width={20} />
-        </>
+        </div>
       ) : (
         <p>Loading ...</p>
       )}
