@@ -7,3 +7,4 @@
   - RFEE -> RFE Exercise
 - CT -> useContext Api Types
 - RDT -> useReducer Types
+- ET -> useEffect Types

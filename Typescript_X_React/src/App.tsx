@@ -4,7 +4,8 @@
 // import STE from "./STE";
 // import STExTodo from "./components/STExTodo";
 
-import { RDTxCounter } from "./components/useReducer (RDT)/RDTxCounter";
+import { MyComponent } from "./components/useEffect (ET)/MyComponent";
+// import { RDTxCounter } from "./components/useReducer (RDT)/RDTxCounter";
 
 // import CTxApp from "./CTxApp";
 
@@ -46,7 +47,9 @@ export const App = () => {
       {/* ========== useContext Api ==========*/}
       {/* <CTxApp /> */}
       {/* ========== useReducer ==========*/}
-      <RDTxCounter />
+      {/* <RDTxCounter /> */}
+      {/* ========== useReducer ==========*/}
+      <MyComponent />
     </div>
   );
 };
