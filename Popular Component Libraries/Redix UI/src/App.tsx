@@ -1,8 +1,10 @@
-const App = () => {
+import { Flex, Text, Button } from "@radix-ui/themes";
+
+export default function App() {
   return (
-    <div>
-      <h1 className="text-2xl font-bold text-blue-600">Hello MuderFucker</h1>
-    </div>
+    <Flex direction="column" gap="2">
+      <Text>Hello from Radix Themes :)</Text>
+      <Button>Let's go</Button>
+    </Flex>
   );
-};
-export default App;
+}
