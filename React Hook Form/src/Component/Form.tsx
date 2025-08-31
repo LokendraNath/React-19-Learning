@@ -57,11 +57,9 @@ export const Form = () => {
           id="password"
           placeholder="Enter Password"
           {...register("password", {
-            required: "Enter password",
-            pattern: {
-              value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
-              message:
-                "Password must be at least 8 characters and contain letters and numbers",
+            minLength: {
+              value: 8,
+              message: "Password Must be atleast 8 character",
             },
           })}
         />
@@ -69,7 +67,9 @@ export const Form = () => {
           <p style={{ color: "red" }}>{errors.password.message}</p>
         )}
       </div>
-      <button type="submit">Submit</button>
+      <button disabled={isSubmitting}>
+        {isSubmitting ? "Loading..." : "Submit"}
+      </button>
     </form>
   );
 };
