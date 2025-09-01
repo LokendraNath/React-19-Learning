@@ -1,8 +1,13 @@
+import { Suspense } from "react";
+import { Todo } from "./component/NEWxFetchData";
+// import { FetchTodo } from "./component/OLD-FetchTodo";
+// import { NEWxFetchData, Todo } from "./component/NEWxFetchData";
+
 const App = () => {
   return (
-    <div>
-      <h1 className="text-2xl font-bold text-blue-600">Hello MuderFucker</h1>
-    </div>
+    <Suspense fallback={<p>Loading...</p>}>
+      <Todo />
+    </Suspense>
   );
 };
 export default App;
