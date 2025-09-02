@@ -58,3 +58,28 @@ const nReturn = (): void => {
 
 //* Null <---
 let kuchNahi: null;
+
+//! Type Inference & Type Annotations
+
+//? Type Inference
+let ae = 10; // inferred as number
+let be = "Hi"; // inferred as string
+
+//? Type Annotations
+
+let age: number;
+age = 19;
+
+function greet(name: string): void {
+  console.log("Hello " + name);
+}
+
+//? Union
+let value: string | number;
+
+value = "Lokendra"; // ✅ allowed
+value = 19;         // ✅ allowed
+// value = true;    // ❌ not allowed
+
+
+
