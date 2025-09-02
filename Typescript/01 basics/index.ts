@@ -59,7 +59,7 @@ const nReturn = (): void => {
 //* Null <---
 let kuchNahi: null;
 
-//! Type Inference & Type Annotations
+//! Type Inference & Type Annotations <=========
 
 //? Type Inference
 let ae = 10; // inferred as number
