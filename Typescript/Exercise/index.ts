@@ -70,7 +70,7 @@ let be = "Hi"; // inferred as string
 let age: number;
 age = 19;
 
-function greet(name: string): void {
+function greet(name: string, age: number): void {
   console.log("Hello " + name);
 }
 
@@ -78,8 +78,5 @@ function greet(name: string): void {
 let value: string | number;
 
 value = "Lokendra"; // ✅ allowed
-value = 19;         // ✅ allowed
+value = 19; // ✅ allowed
 // value = true;    // ❌ not allowed
-
-
-
