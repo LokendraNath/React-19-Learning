@@ -1,13 +1,6 @@
 //! Interfaces & Type Alias <==================
 
-//? Iterfaces (Object Ki Shakal) <---------------
-
-const exampleObj = {
-  id: 13,
-  name: "Lokendra",
-  email: "lokendraverma225@gmail.com",
-  isVergin: true,
-};
+//? Interfaces (Object Ki Shakal) <---------------
 
 interface UserInfo {
   id: number;
@@ -17,10 +10,8 @@ interface UserInfo {
 }
 
 const getData = (obj: UserInfo) => {
-  console.log(obj.isVergin); //Lokendra
+  console.log(obj); //Lokendra
 };
-
-getData(exampleObj);
 
 //* Extending Interface <-----------------------
 
@@ -45,7 +36,7 @@ interface demo {
 interface demo {
   name: string;
 }
-function exm2(obj: demo) {
+function exm23(obj: demo) {
   console.log(obj.id); // ✅
   console.log(obj.name); // ✅
 }
@@ -62,11 +53,11 @@ let name: shabd = "Lokendra Nath";
 type exmpaleType = number | string;
 let value1: exmpaleType;
 
-function exmpFunc(strValue: exmpaleType) {
+function exmpFunc2(strValue: exmpaleType) {
   console.log(strValue);
 }
-exmpFunc(34); //✅
-exmpFunc("lokendra"); //✅
+exmpFunc2(34); //✅
+exmpFunc2("lokendra"); //✅
 // exmpFunc(true); ❌
 
 //* Intersection Types
