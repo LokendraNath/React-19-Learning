@@ -44,7 +44,6 @@ function exm23(obj: demo) {
 //? Type Alias <--------------------------------
 
 //* Baic Type Alias <-----------
-
 //1
 type shabd = string;
 let name: shabd = "Lokendra Nath";
@@ -61,12 +60,12 @@ exmpFunc2("lokendra"); //✅
 // exmpFunc(true); ❌
 
 //* Intersection Types
-
 type cricketerType = {
   name: string;
   age: number;
   century?: number;
 };
+
 type commentatorType = cricketerType & {
   language: string;
 };

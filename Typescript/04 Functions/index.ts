@@ -1,6 +1,7 @@
 //! Functions <==============
 
 //? Basics <------------
+
 // What Return Value
 function abc(): string {
   return "dkfd"; //-> Only return string
@@ -14,7 +15,6 @@ function exm1(): void {
 //? Function types <------------
 
 //* Basic <---
-
 function exm2(name: string, city: string, cb: (val: string) => void) {
   cb("Lokendra"); //Hello Lokendra
 }
@@ -24,7 +24,6 @@ function exm2(name: string, city: string, cb: (val: string) => void) {
 // });
 
 //* Optional (?) & Default Parameter (=) <---
-
 function exm3(
   name: string,
   age: number,
@@ -38,7 +37,6 @@ function exm3(
 // exm3("Deepak", 21); //Deepak 21 false undefined
 
 //* Rest Parameter (...rest/spread) <---
-
 //eg-1 --------- (Rest Operator)
 function addNumber(...arr: number[]): number {
   return arr.reduce((acc, curr) => acc + curr, 0);
@@ -63,7 +61,6 @@ b2.push(23);
 // console.log(b2); //[ 2, 35, 4, 3, 23 ]
 
 //* Function Overloading
-
 //Syntax ----------------------
 
 // Overload signatures (sirf declarations)
