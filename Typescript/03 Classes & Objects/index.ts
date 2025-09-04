@@ -104,7 +104,7 @@ console.log(Exmaple23.sum(2, 3)); // 5
 // const bName = new Exmaple23();❌
 // console.log(bName.brandName); ❌
 
-//* Abstract Classes                             <-----------------------
+//* Abstract Classes
 // Ek class jo direct instantiate nahi ki ja sakti (object nahi banega).
 // Isme abstract methods ho sakte hain (jinke andar body nahi hoti).
 // Child classes ko force karta hai ki wo un methods ko implement karein.
