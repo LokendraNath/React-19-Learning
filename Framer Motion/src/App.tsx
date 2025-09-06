@@ -11,11 +11,21 @@ const App = () => {
         // animate={{ skewY: 23 }}
 
         //! Transitions
+        /*
         initial={{ y: 0 }}
         animate={{ y: 215 }}
         // transition={{ delay: 3 }}
         transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
-        className="h-30 w-30 bg-white rounded-full"
+        */
+
+        //! Keyframes
+        animate={{
+          // scale: [1, 2, 1, 3, 1, 4, 1, 5],
+          rotate: [0, 300, 0],
+          borderRadius: ["20%", "50%", "20%"],
+        }}
+        transition={{ duration: 4, delay: 1 }}
+        className="h-20 w-20 bg-white rounded-lg"
       />
     </div>
   );
