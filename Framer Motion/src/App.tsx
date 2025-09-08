@@ -1,7 +1,10 @@
 // import Basics from "./component/Basics";
 // import PulpButton from "./component/PulpButton";
 
-import RangeSlider from "./component/05 useMotionValue + useSpring/1xUseMotionValue";
+import DraggableBox from "./component/05 useMotionValue + useSpring/UseTransform";
+import UseTransform from "./component/05 useMotionValue + useSpring/UseTransform";
+
+// import RangeSlider from "./component/05 useMotionValue + useSpring/1xUseMotionValue";
 
 // import UseMotionValue1 from "./component/05 useMotionValue/1xUseMotionValue";
 // import UseMotionValue from "./component/05 useMotionValue/1xUseMotionValue";
@@ -44,8 +47,9 @@ const App = () => {
       {/* 04 Stagger Animation */}
       {/* <AnimatedGallary /> */}
 
-      {/* 05 useMotionValue */}
-      <RangeSlider />
+      {/* 05 useMotionValue/ useSpring */}
+      {/* <RangeSlider /> */}
+      <DraggableBox />
     </div>
   );
 };
