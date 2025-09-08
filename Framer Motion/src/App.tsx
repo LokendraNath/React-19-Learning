@@ -1,9 +1,12 @@
 // import Basics from "./component/Basics";
 // import PulpButton from "./component/PulpButton";
 
-import AnimatedShape from "./component/03 Gesture/examples/AnimatedShape";
-import ImageGallary from "./component/03 Gesture/examples/ImageGallary";
-import StaggerAnimation from "./component/04 StaggerAnimation/Basic";
+import AnimatedGallary from "./component/04 StaggerAnimation/Examples/AnimatedGallary";
+// import StaggerAnimation from "./component/04 StaggerAnimation/Examples/Basic";
+
+// import AnimatedShape from "./component/03 Gesture/examples/AnimatedShape";
+// import ImageGallary from "./component/03 Gesture/examples/ImageGallary";
+// import StaggerAnimation from "./component/04 StaggerAnimation/Examples/Basic";
 
 // import GestureBasic from "./component/03 Gesture/Basic";
 // import AnimatedCard from "./component/03 Gesture/examples/AnimatedCard";
@@ -34,7 +37,7 @@ const App = () => {
       {/* <AnimatedShape /> */}
 
       {/* 04 Stagger Animation */}
-      <StaggerAnimation />
+      <AnimatedGallary />
     </div>
   );
 };

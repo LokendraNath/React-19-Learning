@@ -5,7 +5,7 @@ const parentVerients = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.4, //! Main
+      staggerChildren: 0.4, //! Main (bachhe ke bich delay)
     },
   },
 };
