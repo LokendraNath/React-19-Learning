@@ -3,6 +3,7 @@
 
 import AnimatedShape from "./component/03 Gesture/examples/AnimatedShape";
 import ImageGallary from "./component/03 Gesture/examples/ImageGallary";
+import StaggerAnimation from "./component/04 StaggerAnimation/Basic";
 
 // import GestureBasic from "./component/03 Gesture/Basic";
 // import AnimatedCard from "./component/03 Gesture/examples/AnimatedCard";
@@ -30,7 +31,10 @@ const App = () => {
       {/* <GestureBasic /> */}
       {/* <AnimatedCard /> */}
       {/* <ImageGallary /> */}
-      <AnimatedShape />
+      {/* <AnimatedShape /> */}
+
+      {/* 04 Stagger Animation */}
+      <StaggerAnimation />
     </div>
   );
 };
