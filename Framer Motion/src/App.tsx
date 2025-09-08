@@ -1,7 +1,8 @@
 // import Basics from "./component/Basics";
 // import PulpButton from "./component/PulpButton";
 
-import GestureBasic from "./component/03 Gesture/Basic";
+// import GestureBasic from "./component/03 Gesture/Basic";
+import AnimatedCard from "./component/03 Gesture/examples/AnimatedCard";
 
 // import LoaderBounce from "./component/03xBouncingLoader";
 // import HideShowBox from "./component/02 Varients";
@@ -23,7 +24,8 @@ const App = () => {
       {/* <FlipCard /> */}
 
       {/* 03 Gestures */}
-      <GestureBasic />
+      {/* <GestureBasic /> */}
+      <AnimatedCard />
     </div>
   );
 };
