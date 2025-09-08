@@ -17,5 +17,5 @@ const myUser: UserExample = {
   isActive: true,
 };
 
-//! Arrays & Types:
+//! 3. Arrays & Types:
 const fruits: string[] = ["Banana", "Apple", "Mango"];
