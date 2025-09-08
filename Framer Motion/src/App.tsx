@@ -2,7 +2,8 @@
 // import PulpButton from "./component/PulpButton";
 
 // import LoaderBounce from "./component/03xBouncingLoader";
-import HideShowBox from "./component/02 Varients";
+// import HideShowBox from "./component/02 Varients";
+import FlipCard from "./component/02 Varients/examples/FlipCard";
 // import Varients from "./component/04xVarient";
 
 const App = () => {
@@ -16,7 +17,8 @@ const App = () => {
       {/* <LoaderBounce /> */}
 
       {/* 04 Varient */}
-      <HideShowBox />
+      {/* <HideShowBox /> */}
+      <FlipCard />
     </div>
   );
 };
