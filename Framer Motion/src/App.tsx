@@ -1,6 +1,7 @@
 // import Basics from "./component/Basics";
 // import PulpButton from "./component/PulpButton";
 
+import AnimatedShape from "./component/03 Gesture/examples/AnimatedShape";
 import ImageGallary from "./component/03 Gesture/examples/ImageGallary";
 
 // import GestureBasic from "./component/03 Gesture/Basic";
@@ -28,7 +29,8 @@ const App = () => {
       {/* 03 Gestures */}
       {/* <GestureBasic /> */}
       {/* <AnimatedCard /> */}
-      <ImageGallary />
+      {/* <ImageGallary /> */}
+      <AnimatedShape />
     </div>
   );
 };
