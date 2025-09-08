@@ -12,6 +12,7 @@ const App = () => {
       {/* Pulp Button */}
       {/* <PulpButton />
        */}
+
       <LoaderBounce />
     </div>
   );
