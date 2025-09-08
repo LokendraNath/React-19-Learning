@@ -2,7 +2,7 @@
 // import PulpButton from "./component/PulpButton";
 
 // import LoaderBounce from "./component/03xBouncingLoader";
-import HideShowBox from "./component/04xVarient";
+import HideShowBox from "./component/02 Varients";
 // import Varients from "./component/04xVarient";
 
 const App = () => {
