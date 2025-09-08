@@ -1,5 +1,7 @@
 // import Basics from "./component/Basics";
-import PulpButton from "./component/PulpButton";
+// import PulpButton from "./component/PulpButton";
+
+import LoaderBounce from "./component/03xBouncingLoader";
 
 const App = () => {
   return (
@@ -8,7 +10,9 @@ const App = () => {
       {/* <Basics /> */}
 
       {/* Pulp Button */}
-      <PulpButton />
+      {/* <PulpButton />
+       */}
+      <LoaderBounce />
     </div>
   );
 };
