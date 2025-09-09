@@ -25,10 +25,6 @@ const childVarients = {
   visible: {
     opacity: 1,
     x: 0,
-    transision: {
-      type: "spring",
-      stiffness: 300,
-    },
   },
 };
 
