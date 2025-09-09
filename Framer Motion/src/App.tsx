@@ -1,8 +1,11 @@
 // import Basics from "./component/Basics";
 // import PulpButton from "./component/PulpButton";
 
-import DraggableBox from "./component/05 useMotionValue + useSpring/UseTransform";
-import UseTransform from "./component/05 useMotionValue + useSpring/UseTransform";
+import ScrollTriggerAnimation from "./component/06 Scroll Animations/Scroll Trigger Animation/STA";
+// import AnimatedCard from "./component/06 Scroll Animations/Scroll Trigger Animation/STA";
+
+// import DraggableBox from "./component/05 useMotionValue + useSpring/UseTransform";
+// import UseTransform from "./component/05 useMotionValue + useSpring/UseTransform";
 
 // import RangeSlider from "./component/05 useMotionValue + useSpring/1xUseMotionValue";
 
@@ -49,7 +52,11 @@ const App = () => {
 
       {/* 05 useMotionValue/ useSpring */}
       {/* <RangeSlider /> */}
-      <DraggableBox />
+      {/* <DraggableBox /> */}
+
+      {/* 06 Scroll Animation */}
+      {/* Scroll Trigger */}
+      <ScrollTriggerAnimation />
     </div>
   );
 };
