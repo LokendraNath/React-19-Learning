@@ -2,7 +2,9 @@
 // import PulpButton from "./component/PulpButton";
 
 // import ScrollAnimation from "./component/06 Scroll Animations/Scroll Trigger Animation/scroll x transform/ScrollAnimation";
-import ScrollAnimation1 from "./component/06 Scroll Animations/Scroll Trigger Animation/scroll x transform/ScrollAnimation1";
+// import ScrollAnimation1 from "./component/06 Scroll Animations/Scroll Trigger Animation/scroll x transform/ScrollAnimation1";
+// import BasicTranslations from "./component/Exercises/01xBasicTranslations";
+import ExampleApp from "./component/Exercises/ExampleApp";
 // import ScrollTriggerAnimation from "./component/06 Scroll Animations/Scroll Trigger Animation/STA";
 // import AnimatedCard from "./component/06 Scroll Animations/Scroll Trigger Animation/STA";
 
@@ -31,7 +33,7 @@ import ScrollAnimation1 from "./component/06 Scroll Animations/Scroll Trigger An
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-gray-600 max-h-screen flex items-center justify-center">
       {/* <Basics /> */}
 
       {/* <PulpButton />
@@ -61,7 +63,10 @@ const App = () => {
       {/* <ScrollTriggerAnimation /> */}
       {/* Scroll x transform Example */}
       {/* <ScrollAnimation /> */}
-      <ScrollAnimation1 />
+      {/* <ScrollAnimation1 /> */}
+
+      {/* Exercise */}
+      <ExampleApp />
     </div>
   );
 };
