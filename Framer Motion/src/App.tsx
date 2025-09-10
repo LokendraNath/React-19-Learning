@@ -33,7 +33,8 @@ import ExampleApp from "./component/Exercises/ExampleApp";
 
 const App = () => {
   return (
-    <div className="bg-gray-600 max-h-screen flex items-center justify-center">
+    //  className="bg-gray-600 max-h-screen flex items-center justify-center"
+    <div>
       {/* <Basics /> */}
 
       {/* <PulpButton />
