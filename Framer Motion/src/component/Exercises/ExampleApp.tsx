@@ -5,8 +5,10 @@
 // import CombinedTransformations from "./05xCombinedTransformations";
 // import SequentialTrans from "./Module 1/06xSequentialTranformation";
 
+import ModalWithTrans from "./Module 2/03xModalWithTransition";
+
 // import FadeInOut from "./Module 2/01xFadeInOut";
-import SliderSideBar from "./Module 2/02xSliderSideBar";
+// import SliderSideBar from "./Module 2/02xSliderSideBar";
 // import Slider from "./Module 2/02xSliderSideBar";
 
 const ExampleApp = () => {
@@ -22,7 +24,8 @@ const ExampleApp = () => {
 
       {/* //! Module 2 */}
       {/* <FadeInOut /> */}
-      <SliderSideBar />
+      {/* <SliderSideBar /> */}
+      <ModalWithTrans />
     </div>
   );
 };

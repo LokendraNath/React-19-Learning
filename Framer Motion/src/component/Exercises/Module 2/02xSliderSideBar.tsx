@@ -1,4 +1,4 @@
-import { AnimatePresence, easeInOut, motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 
 const sidebarVarient = {

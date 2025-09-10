@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
 .box {
-  @apply w-20 h-20 bg-red-600  cursor-pointer  flex justify-center items-center text-2xl text-center rounded-sm mb-5;
+  @apply w-20 h-20 bg-red-600   flex justify-center items-center text-2xl text-center rounded-sm mb-5;
+}
+.btn {
+  @apply py-2 px-4 bg-blue-600 text-[12px] rounded-lg cursor-pointer;
 }
