@@ -13,6 +13,9 @@ import FadeInCompo from "./Module 4 ( Varients )/1xFadeIn";
 import NavigationMenu from "./Module 4 ( Varients )/2xNavigateMenuSideAnimation";
 import Tooltip from "./Module 4 ( Varients )/3xTooltp";
 import ToggleSwitch from "./Module 4 ( Varients )/4xToggleSwitch";
+import DraggableBox from "./Module 5 ( Gesture )/02xDragbaleBox";
+import SwipebaleCard from "./Module 5 ( Gesture )/02xDragbaleBox";
+import RotateOnDrag from "./Module 5 ( Gesture )/03xRotateOnDrag";
 
 // import PulsingEffect from "./Module 3 ( Keyframe )/02xPulsingEffect";
 // import ColorChange from "./Module 3 ( Keyframe )/03xColorChange";
@@ -60,7 +63,11 @@ const ExampleApp = () => {
       {/* <FadeInCompo /> */}
       {/* <NavigationMenu /> */}
       {/* <Tooltip /> */}
-      <ToggleSwitch />
+      {/* <ToggleSwitch /> */}
+
+      {/* //! Module 5 ( Gesture ) */}
+      {/* <DraggableBox /> */}
+      <RotateOnDrag />
     </div>
   );
 };
