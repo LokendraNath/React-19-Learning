@@ -5,7 +5,10 @@
 // import CombinedTransformations from "./05xCombinedTransformations";
 // import SequentialTrans from "./Module 1/06xSequentialTranformation";
 
-import NotificationToast from "./Module 2/06xNotificationToast";
+import PulsingEffect from "./Module 3 ( Keyframe )/02xPulsingEffect";
+
+// import NotificationToast from "./Module 2 ( Transformation Animation )/06xNotificationToast";
+// import BouncingBall from "./Module 3 ( Keyframe )/01xBouncingBall";
 
 // import ModalWithTrans from "./Module 2/03xModalWithTransition";
 // import ResponsiveAni from "./Module 2/04xResponsiveAnimtion";
@@ -32,7 +35,11 @@ const ExampleApp = () => {
       {/* <ModalWithTrans /> */}
       {/* <ResponsiveAni /> */}
       {/* <Accordian /> */}
-      <NotificationToast />
+      {/* <NotificationToast /> */}
+
+      {/* //! Module 3 ( Keyframe ) */}
+      {/* <BouncingBall /> */}
+      <PulsingEffect />
     </div>
   );
 };
