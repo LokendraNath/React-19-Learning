@@ -4,6 +4,8 @@
 // import ScrollAnimation from "./component/06 Scroll Animations/Scroll Trigger Animation/scroll x transform/ScrollAnimation";
 // import ScrollAnimation1 from "./component/06 Scroll Animations/Scroll Trigger Animation/scroll x transform/ScrollAnimation1";
 // import BasicTranslations from "./component/Exercises/01xBasicTranslations";
+import AnimationControl from "./component/Crash/1xAnimationControls";
+import Basic from "./component/Crash/1xAnimationControls";
 import ExampleApp from "./component/Exercises/ExampleApp";
 // import ScrollTriggerAnimation from "./component/06 Scroll Animations/Scroll Trigger Animation/STA";
 // import AnimatedCard from "./component/06 Scroll Animations/Scroll Trigger Animation/STA";
@@ -33,7 +35,7 @@ import ExampleApp from "./component/Exercises/ExampleApp";
 
 const App = () => {
   return (
-    <div className="bg-blue-950 max-h-screen flex items-center justify-center">
+    <div className="bg-blue-950 min-h-screen flex items-center justify-center">
       {/* <Basics /> */}
 
       {/* <PulpButton />
@@ -66,7 +68,10 @@ const App = () => {
       {/* <ScrollAnimation1 /> */}
 
       {/* Exercise */}
-      <ExampleApp />
+      {/* <ExampleApp /> */}
+
+      {/* Tom is LOading */}
+      <AnimationControl />
     </div>
   );
 };
