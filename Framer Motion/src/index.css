@@ -4,5 +4,5 @@
   @apply w-20 h-20 bg-red-600   flex justify-center items-center text-2xl text-center rounded-sm mb-5;
 }
 .btn {
-  @apply py-2 px-4 bg-blue-600 text-[12px] rounded-lg cursor-pointer;
+  @apply py-2 px-4 bg-blue-600 text-white font-bold text-[12px] rounded-lg cursor-pointer;
 }

@@ -5,9 +5,11 @@
 // import CombinedTransformations from "./05xCombinedTransformations";
 // import SequentialTrans from "./Module 1/06xSequentialTranformation";
 
+import NotificationToast from "./Module 2/06xNotificationToast";
+
 // import ModalWithTrans from "./Module 2/03xModalWithTransition";
 // import ResponsiveAni from "./Module 2/04xResponsiveAnimtion";
-import Accordian from "./Module 2/05xAccordianCompo";
+// import Accordian from "./Module 2/05xAccordianCompo";
 
 // import FadeInOut from "./Module 2/01xFadeInOut";
 // import SliderSideBar from "./Module 2/02xSliderSideBar";
@@ -29,7 +31,8 @@ const ExampleApp = () => {
       {/* <SliderSideBar /> */}
       {/* <ModalWithTrans /> */}
       {/* <ResponsiveAni /> */}
-      <Accordian />
+      {/* <Accordian /> */}
+      <NotificationToast />
     </div>
   );
 };
