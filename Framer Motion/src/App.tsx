@@ -4,9 +4,10 @@
 // import ScrollAnimation from "./component/06 Scroll Animations/Scroll Trigger Animation/scroll x transform/ScrollAnimation";
 // import ScrollAnimation1 from "./component/06 Scroll Animations/Scroll Trigger Animation/scroll x transform/ScrollAnimation1";
 // import BasicTranslations from "./component/Exercises/01xBasicTranslations";
-import AnimationControl from "./component/Crash/1xAnimationControls";
-import Basic from "./component/Crash/1xAnimationControls";
-import ExampleApp from "./component/Exercises/ExampleApp";
+// import AnimationControl from "./component/Crash/1xAnimationControls";
+// import Basic from "./component/Crash/1xAnimationControls";
+import ViewBasedAnimations from "./component/Crash/2xScrollBaseAnimation";
+// import ExampleApp from "./component/Exercises/ExampleApp";
 // import ScrollTriggerAnimation from "./component/06 Scroll Animations/Scroll Trigger Animation/STA";
 // import AnimatedCard from "./component/06 Scroll Animations/Scroll Trigger Animation/STA";
 
@@ -71,7 +72,8 @@ const App = () => {
       {/* <ExampleApp /> */}
 
       {/* Tom is LOading */}
-      <AnimationControl />
+      {/* <AnimationControl /> */}
+      <ViewBasedAnimations />
     </div>
   );
 };
