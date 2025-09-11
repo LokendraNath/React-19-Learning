@@ -5,7 +5,13 @@
 // import CombinedTransformations from "./05xCombinedTransformations";
 // import SequentialTrans from "./Module 1/06xSequentialTranformation";
 
-import PulsingEffect from "./Module 3 ( Keyframe )/02xPulsingEffect";
+// import SlidingText from "./Module 3 ( Keyframe )/04xSlidingText";
+// import ZigZag from "./Module 3 ( Keyframe )/05xZigZag";
+// import WaveEffect from "./Module 3 ( Keyframe )/06xWaveEffect";
+import BgChange from "./Module 3 ( Keyframe )/07xBgChange";
+
+// import PulsingEffect from "./Module 3 ( Keyframe )/02xPulsingEffect";
+// import ColorChange from "./Module 3 ( Keyframe )/03xColorChange";
 
 // import NotificationToast from "./Module 2 ( Transformation Animation )/06xNotificationToast";
 // import BouncingBall from "./Module 3 ( Keyframe )/01xBouncingBall";
@@ -20,7 +26,8 @@ import PulsingEffect from "./Module 3 ( Keyframe )/02xPulsingEffect";
 
 const ExampleApp = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div>
+      {/* className="min-h-screen flex items-center justify-center" */}
       {/* //! Module 1 */}
       {/* <BasicTranslations /> */}
       {/* <VerticalMovement /> */}
@@ -39,7 +46,12 @@ const ExampleApp = () => {
 
       {/* //! Module 3 ( Keyframe ) */}
       {/* <BouncingBall /> */}
-      <PulsingEffect />
+      {/* <PulsingEffect /> */}
+      {/* <ColorChange /> */}
+      {/* <SlidingText /> */}
+      {/* <ZigZag /> */}
+      {/* <WaveEffect /> */}
+      <BgChange />
     </div>
   );
 };
