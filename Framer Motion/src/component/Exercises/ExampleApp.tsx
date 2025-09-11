@@ -12,6 +12,7 @@ import BgChange from "./Module 3 ( Keyframe )/07xBgChange";
 import FadeInCompo from "./Module 4 ( Varients )/1xFadeIn";
 import NavigationMenu from "./Module 4 ( Varients )/2xNavigateMenuSideAnimation";
 import Tooltip from "./Module 4 ( Varients )/3xTooltp";
+import ToggleSwitch from "./Module 4 ( Varients )/4xToggleSwitch";
 
 // import PulsingEffect from "./Module 3 ( Keyframe )/02xPulsingEffect";
 // import ColorChange from "./Module 3 ( Keyframe )/03xColorChange";
@@ -58,7 +59,8 @@ const ExampleApp = () => {
       {/* //! Module 4 ( Varients ) */}
       {/* <FadeInCompo /> */}
       {/* <NavigationMenu /> */}
-      <Tooltip />
+      {/* <Tooltip /> */}
+      <ToggleSwitch />
     </div>
   );
 };
