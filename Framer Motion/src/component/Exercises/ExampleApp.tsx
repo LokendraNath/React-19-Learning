@@ -9,6 +9,8 @@
 // import ZigZag from "./Module 3 ( Keyframe )/05xZigZag";
 // import WaveEffect from "./Module 3 ( Keyframe )/06xWaveEffect";
 import BgChange from "./Module 3 ( Keyframe )/07xBgChange";
+import FadeInCompo from "./Module 4 ( Varients )/1xFadeIn";
+import NavigationMenu from "./Module 4 ( Varients )/2xNavigateMenuSideAnimation";
 
 // import PulsingEffect from "./Module 3 ( Keyframe )/02xPulsingEffect";
 // import ColorChange from "./Module 3 ( Keyframe )/03xColorChange";
@@ -26,8 +28,7 @@ import BgChange from "./Module 3 ( Keyframe )/07xBgChange";
 
 const ExampleApp = () => {
   return (
-    <div>
-      {/* className="min-h-screen flex items-center justify-center" */}
+    <div className="relative min-h-screen flex items-center justify-center text-white">
       {/* //! Module 1 */}
       {/* <BasicTranslations /> */}
       {/* <VerticalMovement /> */}
@@ -51,7 +52,11 @@ const ExampleApp = () => {
       {/* <SlidingText /> */}
       {/* <ZigZag /> */}
       {/* <WaveEffect /> */}
-      <BgChange />
+      {/* <BgChange /> */}
+
+      {/* //! Module 4 ( Varients ) */}
+      {/* <FadeInCompo /> */}
+      <NavigationMenu />
     </div>
   );
 };
