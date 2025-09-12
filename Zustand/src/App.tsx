@@ -1,4 +1,4 @@
-import Counter from "./componetns/1.1xSimpleCounter";
+import Counter from "./componetns/Basics/1.1xSimpleCounter";
 
 const App = () => {
   return (

@@ -1,4 +1,4 @@
-import { useCounter } from "../store";
+import { useCounter } from "../../store";
 import CounterButton from "./1.2xButtons";
 
 const Counter = () => {
