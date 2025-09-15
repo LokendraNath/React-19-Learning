@@ -1,9 +1,10 @@
-import Counter from "./components/Counter";
+import Counter from "./Simple Counter/components/Counter";
 
 const App = () => {
   return (
     <div>
-      <Counter />
+      {/* //* Simple Counter */}
+      {/* <Counter /> */}
     </div>
   );
 };
