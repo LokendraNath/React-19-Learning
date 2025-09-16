@@ -1,12 +1,7 @@
 import { useUpdateProductMutation } from "../App/Service/productApi";
 
 const UpdateProduct = ({ productId }) => {
-  const [updateProduct, { data, error, isLoading }] =
-    useUpdateProductMutation();
-
-  if (error) {
-    <h1>{error}</h1>;
-  }
+  const [updateProduct, { data, isLoading }] = useUpdateProductMutation();
 
   if (isLoading) {
     <h1>Loading...</h1>;
